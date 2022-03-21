@@ -19,20 +19,26 @@
 		<main class="calculator">
 			<div class="inputs margin__bottom">
 				<h2 class="inputs__title">Bill</h2>
-				<input class="bill margin__bottom light" type="number" />
+				<input class="bill margin__bottom padding__right light" type="number" placeholder="0" min="0" oninput="this.value = Math.abs(this.value)" />
 
 				<h2 class="inputs__title">Select Tip %</h2>
 				<div class="inputs__percentages margin__bottom">
 					<input class="percentage align__center" type="button" value="5%" />
 					<input class="percentage align__center" type="button" value="10%" />
-					<input class="percentage align__center selected" type="button" value="15%" />
+					<input class="percentage align__center" type="button" value="15%" />
 					<input class="percentage align__center" type="button" value="25%" />
 					<input class="percentage align__center" type="button" value="50%" />
-					<input class="custom inputs__number align__center light" placeholder="Custom" type="number" />
+					<input
+						class="percentage custom align__center light"
+						placeholder="Custom"
+						oninput="custom_percentage_onInput(this.value)"
+						onfocusout="custom_percentage_focusOut(this.value)"
+					/>
 				</div>
 
 				<h2 class="inputs__title">Number of People</h2>
-				<input class="people light" type="number" />
+				<input class="people light padding__right" placeholder="0" type="number" oninput="this.value = Math.abs(this.value);" min="1" />
+				<span class="error">Can't be zero</span>
 			</div>
 
 			<div class="results">
@@ -41,22 +47,23 @@
 						Tip Amount
 						<p class="subtitle">/ person</p>
 					</h2>
-					<div class="amount">$<output for="">4.27</output></div>
+					<div class="amount tip">$<output for="">0.00</output></div>
 				</div>
 				<div class="results__calc">
 					<h2 class="title">
 						Total
 						<p class="subtitle">/ person</p>
 					</h2>
-					<div class="amount">$<output for="">32.79</output></div>
+					<div class="amount total">$<output for="">0.00</output></div>
 				</div>
 				<input class="reset" type="submit" value="RESET" />
 			</div>
 		</main>
 
-		<!-- <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div> -->
+		<div class="attribution">
+			Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
+			<a href="https://www.remyboire.fr" target="_blank">Rémy Boiré</a>.
+		</div>
 	</body>
+	<script src="js/index.js"></script>
 </html>
