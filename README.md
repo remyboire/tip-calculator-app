@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/remyboire/tip-calculator-app)
-- Live Site URL: [Add live site URL here](https://remyboire.github.io/tip-calculator-app/public)
+- Solution URL: [Github](https://github.com/remyboire/tip-calculator-app)
+- Live Site URL: [Github Pages](https://remyboire.github.io/tip-calculator-app/public)
 
 ## My process
 
