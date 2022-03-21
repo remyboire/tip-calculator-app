@@ -213,6 +213,8 @@ body {
 	font-family: 'Space Mono', monospace;
 	color: $dark-grayish-cyan;
 	margin-top: auto;
+	padding: 25px 25px 0 25px;
+	line-height: 1.2;
 	& a {
 		color: $very-dark-cyan;
 		&:hover {
