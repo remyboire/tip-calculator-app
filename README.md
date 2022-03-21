@@ -44,8 +44,9 @@ Users should be able to:
 
 ### What I learned
 
-I struglled a lot with the scss part because of the diversity of inputs and special cases. I think that my structure is far from optimal and maintenance should be hard!
+I strugglled a lot with the scss part because of the diversity of inputs and special cases. I think that my structure is far from optimal and maintenance should be hard!
 Any advice on that point are welcome. I really liked the javascript part and I learned how to deal with inputs value as it was my first time.
+On the inputs, I didn't manage to get the outline correctly on safari. Does anyone know the tricks?
 
 ## Author
 
